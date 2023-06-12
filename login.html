@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.png" rel="icon" />
+    <title>MultiShop - Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="info">You must be a member to complete the order</div>
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required id="login-email">
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required id="login-pass">
+              </div>
+              <div class="field btn" id="login-btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+            </form>
+
+            <form class="signup">
+                <div class="field">
+                    <input type="text" placeholder="First Name" required id="signup-fname">
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Last Name" required id="signup-lname">
+                  </div>
+              <div class="field">
+                <input type="text" placeholder="Email Address" required id="signup-email">
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required id="signup-pass">
+              </div>
+              <div class="field btn" id="signup-btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
